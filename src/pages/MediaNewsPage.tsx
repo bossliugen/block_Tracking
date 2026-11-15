@@ -17,14 +17,14 @@ interface VideoItem {
 const FEATURED_VIDEOS: VideoItem[] = [
   {
     id: 'vid-001',
-    youtubeId: 'bjz5FPoq2ME',
+    youtubeId: 'xCqlSeHG6K0',
     isShort: true,
     title: '鏈上資金與市場動態精選短評（YouTube Shorts）',
     sourceLabel: 'YouTube Shorts',
     publishedAt: '今日精選',
     category: '市場快訊',
     summary: '點擊播放器即可於站內直接觀看此部 Shorts 短影音，掌握即時市場動態與觀點解析。',
-    shareUrl: 'https://youtube.com/shorts/bjz5FPoq2ME?feature=share',
+    shareUrl: 'https://youtube.com/shorts/xCqlSeHG6K0?feature=share',
   },
 ];
 

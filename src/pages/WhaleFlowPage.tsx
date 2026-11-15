@@ -4,6 +4,7 @@ import { ChainId, EntityCategory } from '../types/onchain';
 import { KNOWN_ENTITIES, formatUsdCompact } from '../data/entities';
 import { CopyableAddress } from '../components/CopyableAddress';
 import { RevealOnScroll } from '../components/RevealOnScroll';
+import { InstitutionalHoldingsRank } from '../components/InstitutionalHoldingsRank';
 
 interface WhaleFlowPageProps {
   selectedChain: ChainId;
@@ -158,6 +159,14 @@ export const WhaleFlowPage: React.FC<WhaleFlowPageProps> = ({
             })}
           </div>
         </section>
+      </RevealOnScroll>
+
+      {/* Institutional Token Holdings Ranking */}
+      <RevealOnScroll>
+        <InstitutionalHoldingsRank
+          selectedChain={selectedChain}
+          onSelectEntityAddress={onSelectEntityAddress}
+        />
       </RevealOnScroll>
 
       {/* Known Institutional & Whale Public Key Directory */}

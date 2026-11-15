@@ -8,6 +8,7 @@ import { OverviewPage } from './pages/OverviewPage';
 import { WhaleFlowPage } from './pages/WhaleFlowPage';
 import { PriceTrackerPage } from './pages/PriceTrackerPage';
 import { TxLedgerPage } from './pages/TxLedgerPage';
+import { MediaNewsPage } from './pages/MediaNewsPage';
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<PageTab>('overview');
@@ -91,6 +92,8 @@ export const App: React.FC = () => {
             onInspect={setInspectedRecord}
           />
         )}
+
+        {activeTab === 'media' && <MediaNewsPage />}
       </main>
 
       <InspectionDrawer

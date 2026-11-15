@@ -595,3 +595,16 @@
     grid-template-columns: 1fr;
   }
 }
+
+.media-feature-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .media-feature-grid {
+    grid-template-columns: 1fr;
+  }
+}

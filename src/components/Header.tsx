@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type PageTab = 'overview' | 'whales' | 'markets' | 'ledger';
+export type PageTab = 'overview' | 'whales' | 'markets' | 'ledger' | 'media';
 
 interface HeaderProps {
   activeTab: PageTab;
@@ -13,6 +13,7 @@ const NAV_ITEMS: { id: PageTab; label: string }[] = [
   { id: 'whales', label: '資金流向與大戶追蹤' },
   { id: 'markets', label: '幣種挑選與價格追蹤' },
   { id: 'ledger', label: '鏈上交易紀錄' },
+  { id: 'media', label: '影音相關消息' },
 ];
 
 export const Header: React.FC<HeaderProps> = ({ activeTab, onSelectTab, marketSource }) => {

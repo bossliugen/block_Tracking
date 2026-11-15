@@ -1,0 +1,75 @@
+:root {
+  /* Institutional Trust — Warm Editorial Palette */
+  --bg-canvas: #F6F3EC;
+  --bg-surface: #FFFFFF;
+  --bg-subtle: #FBF9F5;
+  --bg-hover: #F3EFE6;
+  --border-hairline: #DFD9CE;
+  --border-strong: #C9C1B2;
+
+  /* Ink */
+  --ink-primary: #1C1917;
+  --ink-secondary: #57534E;
+  --ink-muted: #78716C;
+
+  /* Semantic Status (Restrained & Calm) */
+  --status-safe-fg: #1B4332;
+  --status-safe-bg: #E7EFEA;
+  --status-warn-fg: #B45309;
+  --status-warn-bg: #FEF3C7;
+  --status-risk-fg: #991B1B;
+  --status-risk-bg: #FEE2E2;
+
+  /* Typography */
+  --font-brand: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Motion */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--bg-canvas);
+  color: var(--ink-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg-canvas);
+  color: var(--ink-primary);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-sans);
+  letter-spacing: 0.03em;
+  text-wrap: balance;
+  margin: 0;
+  font-weight: 600;
+  color: var(--ink-primary);
+}
+
+button, input, select {
+  font-family: var(--font-sans);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}

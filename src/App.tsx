@@ -100,6 +100,31 @@ export const App: React.FC = () => {
         record={inspectedRecord}
         onClose={() => setInspectedRecord(null)}
       />
+
+      <footer className="site-footer">
+        <span>© 2026 HIBOSS GEN. · 台灣</span>
+        <div className="footer-links">
+          <a href="https://bossliugen.github.io/GENWeb/" className="footer-link">
+            總門戶
+          </a>
+          <a
+            href="https://www.youtube.com/@hibossgen"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            YouTube
+          </a>
+          <a
+            href="https://www.instagram.com/hiboss.gen/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            Instagram
+          </a>
+        </div>
+      </footer>
     </div>
   );
 };

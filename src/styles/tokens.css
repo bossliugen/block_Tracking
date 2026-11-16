@@ -1,6 +1,8 @@
 :root {
-  /* Institutional Trust — Warm Editorial Palette */
+  /* Institutional Trust — Warm Editorial Palette (DESIGN_SYSTEM.md) */
   --bg-canvas: #F6F3EC;
+  --bg-paper: #F4F2EC;
+  --bg-sand: #EBE6DC;
   --bg-surface: #FFFFFF;
   --bg-subtle: #FBF9F5;
   --bg-hover: #F3EFE6;
@@ -12,6 +14,9 @@
   --ink-secondary: #57534E;
   --ink-muted: #78716C;
 
+  /* Domain Accent (01 / ON-CHAIN PULSE — PCB Copper <= 5%) */
+  --accent-copper: #C2593F;
+
   /* Semantic Status (Restrained & Calm) */
   --status-safe-fg: #1B4332;
   --status-safe-bg: #E7EFEA;
@@ -22,10 +27,11 @@
 
   /* Typography */
   --font-brand: 'Instrument Serif', Georgia, serif;
-  --font-sans: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-sans: 'Inter', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  /* Motion */
+  /* Radius & Motion */
+  --radius-card: 16px;
   --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -66,6 +72,7 @@ button, input, select {
 }
 
 .tabular {
+  font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
 }
 
